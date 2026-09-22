@@ -8,14 +8,9 @@ section: home
 
 <p class="tagline" id="tagline"><span id="tagline-text"></span><span class="cursor">&nbsp;</span></p>
 
-I'm a mostly-retired academic with an office full of unread books and a
-whiteboard that hasn't been fully erased since 2019. This is where I keep
-the things I'd otherwise say to an empty room: what I'm reading, problems
-I can't stop poking at, pictures Mathematica made when I asked it nicely,
-a few software things I built for no defensible reason, some music, and
-whatever else doesn't fit anywhere.
+Hello! My name is Douglas Hofstadter. This is not my real name, of course, but my internet pseudonym is Douglas Hofstadter. If you know me in person, you will probably recognize me from my picture or my description.
 
-Nothing here is peer-reviewed. Read accordingly.
+I am an undergraduate student living in Portland, Oregon! I am majoring in Physics (theoretical concentration) and Mathematics, and minoring in Classics. I am also interested in educational theory, though I am with-holding that until my Masters.
 
 <div class="section-grid">
   {% for s in site.sections %}
