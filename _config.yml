@@ -1,0 +1,123 @@
+title: Douglas Hofstadter
+tagline: "a desk, some chalk dust, and too many open tabs"
+description: >-
+  Notes on reading, math, physics, simulations, small digital projects,
+  music, and whatever else won't leave me alone.
+author: Douglas Hofstadter
+url: "" # fill in once you know your github pages url, e.g. https://yourname.github.io
+baseurl: ""
+
+# ---- markdown / build ----
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+permalink: /:collection/:year/:month/:day/:title/
+
+# ---- plugins supported natively by GitHub Pages ----
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# ---- the six sections, each its own collection ----
+collections:
+  reading:
+    output: true
+    permalink: /reading/:year/:month/:day/:title/
+  mathphysics:
+    output: true
+    permalink: /math-physics/:year/:month/:day/:title/
+  simulations:
+    output: true
+    permalink: /simulations/:year/:month/:day/:title/
+  projects:
+    output: true
+    permalink: /projects/:year/:month/:day/:title/
+  music:
+    output: true
+    permalink: /music/:year/:month/:day/:title/
+  rambling:
+    output: true
+    permalink: /rambling/:year/:month/:day/:title/
+
+# ---- section metadata: label, accent color, one-line description ----
+sections:
+  reading:
+    label: Reading
+    accent: "#2454b8"
+    blurb: "what I'm reading, and what I think while I'm reading it"
+  mathphysics:
+    label: Math & Physics
+    accent: "#b8202f"
+    blurb: "proofs, half-proofs, and things that only work on Tuesdays"
+  simulations:
+    label: Simulations
+    accent: "#7a3ea1"
+    blurb: "Mathematica output and other pictures that used to be equations"
+  projects:
+    label: Projects
+    accent: "#c07d17"
+    blurb: "other things I've built, mostly for no good reason"
+  music:
+    label: Music
+    accent: "#1f8a70"
+    blurb: "recordings, recommendations, and music theory rabbit holes"
+  rambling:
+    label: Rambling
+    accent: "#555273"
+    blurb: "no organizing principle whatsoever"
+
+# ---- default front matter per collection ----
+defaults:
+  - scope:
+      path: ""
+      type: reading
+    values:
+      layout: post
+      section: reading
+      section_url: /reading/
+  - scope:
+      path: ""
+      type: mathphysics
+    values:
+      layout: post
+      section: mathphysics
+      section_url: /math-physics/
+  - scope:
+      path: ""
+      type: simulations
+    values:
+      layout: post
+      section: simulations
+      section_url: /simulations/
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: post
+      section: projects
+      section_url: /projects/
+  - scope:
+      path: ""
+      type: music
+    values:
+      layout: post
+      section: music
+      section_url: /music/
+  - scope:
+      path: ""
+      type: rambling
+    values:
+      layout: post
+      section: rambling
+      section_url: /rambling/
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
